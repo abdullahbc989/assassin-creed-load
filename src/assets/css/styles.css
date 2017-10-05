@@ -1,4 +1,129 @@
+/* ---- reset ---- */
+
+body {
+	margin: 0;
+	font-family: "Libre Baskerville", serif;
+}
+
+#logo {
+	color: #fff;
+	position: absolute;
+	z-index: 1;
+	top: 5%;
+	left: -5%;
+	font-size: 60px;
+	text-shadow: -1px 1px #000;
+	pointer-events: none;
+}
+
+#upper {
+	margin-left: 1%;
+}
+
+sup {
+	font-size: 20p;
+}
+
+#mid {
+	font-size: 55px;
+}
+
+#lower {
+	color: #c1232c;
+	left-margin: 10%;
+}
+/*
+
+#logo {
+	z-index: 1;
+}
+
+#upper {
+	z-index: 1;
+	position: absolute;
+	color: #fff;
+	font-size: 50px;
+	margin: auto;
+	left: 35%;
+	margin-right: -50%;
+}
+
+#lower {
+	z-index: 1;
+	position: absolute;
+	color: #fff;
+	font-size: 45px;
+	margin: auto;
+	top: 5%;
+	left: 37%;
+	margin-right: -50%;
+}
+*/
+
 #particles-js {
-    background: firebrick;
-    height: 400px;
+	z-index: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#142424, #548490, #84f7ff, #083950);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+#menu {
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+	width: 15%;
+	font-weight: bold;
+}
+
+.list-group {
+	border-radius: 0;
+}
+
+.active {
+	background: #fff !important;
+	color: #000 !important;
+	width: 75%;
+	border-radius: 0 !important;
+}
+
+.list-group-item {
+	background: #282828;
+	border: #2A3D3B;
+	color: #D3D3D3;
+	opacity: 0.89;
+	font-size: 14px;
+}
+
+.inactive {
+	border-left: 10px solid #c1232c;
+}
+
+.list-group-item:hover {
+	color: #fff;
+	width: 120%;
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+	  #logo {
+		  font-size: 1px;
+	  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
+	#logo {
+		left: -20%;
+	}
+	
+	.active {
+		width: inherit;
+	}
 }
